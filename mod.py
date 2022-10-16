@@ -130,9 +130,9 @@ def main():
             return
 
         elif command == "test":
-            result = run_code(problem_code_path)
-            if result:
-                print(result)
+            run_error = run_code(problem_code_path)
+            if run_error is not None:
+                print(run_error)
             wait_for_any_key()
 
         elif command == "commit":
