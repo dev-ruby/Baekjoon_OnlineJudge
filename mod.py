@@ -140,7 +140,7 @@ def main():
             wait_for_any_key()
 
         elif command == "copy":
-            context = "\n".join(read_file(problem_code_path))
+            context = "".join(read_file(problem_code_path))
             clipboard.copy(context)
             print("copied!")
             wait_for_any_key()
