@@ -6,7 +6,7 @@ import subprocess
 from bs4 import BeautifulSoup
 from typing import List, Tuple, Union
 
-CODE_PRESET = """# {0} - {1}\n# {2}-{3}-{4}\n\n\ndef solve():\n    pass\nsolve()\n"""
+CODE_PRESET = """# {0} - {1}\n# {2}-{3}-{4}\n\n\nimport sys\n\n\ndef input() -> str:\n    return sys.stdin.readline().rstrip()\n\n\ndef solve():\n    pass\n\n\nsolve()\n"""
 PATH = r"problems\{0}.py"
 
 
